@@ -1,0 +1,9 @@
+CREATE DATABASE PI2;
+CREATE USER 'wallde'@'localhost' IDENTIFIED BY 'aulapi2';
+GRANT ALL PRIVILEGES ON PI2.* TO 'wallde'@'localhost';
+FLUSH PRIVILEGES;
+
+CREATE TABLE Pessoa (
+    nome VARCHAR(255) PRIMARY KEY,
+    idade INT
+);
